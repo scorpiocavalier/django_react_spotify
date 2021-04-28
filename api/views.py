@@ -7,4 +7,5 @@ from .serializers import RoomSerializer
 class RoomView(generics.ListAPIView):
   # queryset is what fields we want returned
   queryset = Room.objects.all()
+  # transform it to a more readable format
   serializer_class = RoomSerializer
